@@ -6,13 +6,14 @@ def totalvikt(x):
 
 def antalplattor(x):
 	plattorvikt = totalvikt(vikt)
-	while plattorvikt > 70:
-		plattorvikt = plattorvikt // vikter[0]
-		print(plattorvikt)
-		if plattorvikt < 70:
+	while plattorvikt > 50:
+		antal25 = plattorvikt // int(vikter[0])
+		print(antal25)
+		return antal25
+		if plattorvikt < 50:
 			plattorvikt = plattorvikt // vikter[1]
 			print(plattorvikt)
-		elif plattorvikt < 60:
+		elif plattorvikt < 40:
 			print()
 
 
